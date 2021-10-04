@@ -69,7 +69,7 @@
 
 .sticky{
     background-color: rgb(255, 255, 255);
-    padding: 10px;
+    padding: 5px;
 }
 
 .sticky .logo {
@@ -560,22 +560,22 @@ background-color: #111;
             
 #gear1 {
    position: relative;
-   margin-left: 680px;
-   margin-top: -170px;
+   margin-left: 600px;
+   margin-top: -150px;
    
 }
             
 #gear2 {
     position: relative;
-    margin-left: 760px;
-    margin-top: -240px;
+    margin-left: 680px;
+    margin-top: -220px;
    
 }   
 
 #gear3 {
     position: relative;
-     margin-left: 840px;
-    margin-top: -170px;  
+     margin-left: 760px;
+    margin-top: -150px;  
 }
 
 .spin {
