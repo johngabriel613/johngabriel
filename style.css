@@ -316,7 +316,8 @@ background-color: #111;
 }
 
 .nameZone, .emailZone{
-    max-width: 455px;
+    max-width: 282px;
+    
     
 }
 
@@ -690,11 +691,12 @@ section.dark .section-title::after{
     transition: .3s linear;
     cursor: pointer;
     color: #fff;
+    border: 1px solid;
 }
 
 .block:hover{
     color: #111;
-    background-color: #ddd;
+    background-color: #fff;
 }
 
 .block::before{
@@ -717,6 +719,10 @@ section.dark .section-title::after{
     left: -27px;
     top: 20%;
     border-radius: 50% ;
+}
+
+.block:hover::after{
+    background-color: #e66767;
 }
 
 .block h3{

@@ -12,6 +12,8 @@
     margin: 200px 0;
 }
 
+
+
 .main h6{
     margin-top: 10px;
     font-size: 15px;
@@ -22,29 +24,28 @@
     font-size: 80px;
 }
 
-.buttons{
+.buttons a{
     margin-top:50px ;
-    border: 1px solid aqua;
+    color: #fff;
+    border: 1px solid #e66767;
     border-radius: 35px;
     width: 120px;
     display: inline-block;
     font-size: 20px;
     padding: 10px;
-    background-color: aqua;
-}
-
-.buttons a{
-    color:#111;
+    background-color: #e66767;
+    cursor: pointer;
+    transition: .3s linear;
+    font-weight: 500;
 }
 
 .buttons a:hover{
     color: #111;
+    background-color: #fff;
 }
 
-.buttons:hover{
-    background-color: #fff;
-    transition: .3s linear;
-}
+
+
 
 p {
   text-align: center;
