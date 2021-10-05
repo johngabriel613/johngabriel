@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'MetropolisRegular';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.main{
+    text-align: center;
+    margin: 200px 0;
+}
+
+.main h6{
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.icon{
+    margin-top: 20px;
+    font-size: 80px;
+}
+
+.buttons{
+    margin-top:50px ;
+    border: 1px solid aqua;
+    border-radius: 35px;
+    width: 120px;
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px;
+    background-color: aqua;
+}
+
+.buttons a{
+    color:#111;
+}
+
+.buttons a:hover{
+    color: #111;
+}
+
+.buttons:hover{
+    background-color: #fff;
+    transition: .3s linear;
+}
+
+p {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+body {
+    background-image: linear-gradient(aqua,#fff);
+    background-repeat: no-repeat;
+    
+
+}
