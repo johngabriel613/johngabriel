@@ -19,7 +19,7 @@ html, body{
     align-items: center;
     width: 100px;
     height: 20px;
-    right: 350px;
+    right: 320px;
     cursor: pointer;
     transition:  all .5s ese ease-in-out;
    
@@ -212,7 +212,7 @@ html, body{
         background-color: #222831;
         height: 100vh;
         width: 100%;
-        right: -120%;
+        right: -50%;
         transition: all .5s ;
         z-index: 999;
         max-width: fit-content;
@@ -235,7 +235,8 @@ html, body{
 
     .menu-btn{
         display: flex;
-        right: 340px;
+        right:180px;
+        
         
     }
 
@@ -257,20 +258,76 @@ html, body{
     .home-button a:nth-child(1), .home-button a:nth-child(2){
          padding: 8px 15px;
     }
+
+    #home-sec{
+        background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(images/bg2.png);
+        background-size: cover;
+        background-attachment: fixed; 
+        height:  100vh;
+        min-height: 500px;
+        
+    }
     
 }
 
-@media screen and (max-width: 400px) {
-    .menu-btn{
-        right: 270px;
-        
+@media screen and (max-width: 600px) {
+    .navbar{
+        right: -60%;
     }
 }
 
-@media screen and (max-width: 350px) {
-    .menu-btn{
-        right: 220px;
-        
+@media screen and (max-width: 550px) {
+    .navbar{
+        right: -65%;
     }
-
 }
+
+@media screen and (max-width: 500px) {
+    .navbar{
+        right: -70%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .navbar{
+        right: -75%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .navbar{
+        right: -85%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .navbar{
+        right: -90%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .navbar{
+        right: -100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .navbar{
+        right: -110%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .navbar{
+        right: -120%;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .navbar{
+        right: -130%;
+    }
+}
+
+
