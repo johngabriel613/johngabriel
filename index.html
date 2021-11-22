@@ -4,60 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/metropolis" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
 </head>
-
-<nav class="navbar">
-
-<div class="menu-btn">
-    <div class="menu-btn__burger"></div>
-</div>
-
-         <div class="navbar-menu">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Education</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
+<header>
+    <h1 class="logo">.johndev</h1>
+    <nav class="nav-bar">
+        <div class="menu-toggle-close">
+            <i class="fal fa-times"></i>
         </div>
-</nav>
-<section id="home-sec">
-<div class="home">
-    <h1>Hi I'm <span class="animate"></span></h1>
-    <script src="typed.js"></script>
-                <script>
-                 var typed = new Typed('.animate', {
-                 strings: [
-                  "John Gabriel",
-                  "A Developer",
-                  "A Programmer",
-                  "A Designer"
-                 ],
-                 typeSpeed: 70,
-                 backSpeed: 70,
-                 loop:true,
-                
-                 });
-               </script>
-    <div class="icons">
-        <a href="#" class="fab fa-facebook-f"></a>
-        <a href="#" class="fab fa-instagram"></a>
-        <a href="#" class="fab fa-twitter"></a>
+
+        <ul>
+            <li class="active "><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">EDUCATION</a></li>
+            <li><a href="#">PROJECTS</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    </nav>
+
+    <div class="menu-toggle-open">
+        <i class="fal fa-bars"></i>
     </div>
+</header>
+<body>
+   <section id="home">
+       <div class="home-content">
+           <h1>Hi I'm <span class="text"></span></h1>
+           <script src="typed.js"></script>
+           <div class="socmed-icons">
+               <a href="" class="fab fa-facebook-f"></a>
+               <a href="" class="fab fa-twitter"></a>
+               <a href="" class="fab fa-instagram"></a>
 
-    <div class="home-button">
-        <a href="#">Contact me</a>
-        <a href="#">Download CV</a>
-    </div>
-</div>
-<script src="script.js"> </script>
-</section>    
-
-
-
-
+           </div>
+       </div>
+   </section>
+</body>
+<script src="script.js"></script>
 </html>

@@ -1,333 +1,206 @@
-
-
 *{
-    margin: 0;
     padding: 0;
-    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
-html, body{
-    min-height: 100%;
-    min-width: 100%;
-}
-
-/* Menu-Toggle */
-.menu-btn{
-    position: relative;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 20px;
-    right: 320px;
-    cursor: pointer;
-    transition:  all .5s ese ease-in-out;
-   
-}
-
-.menu-btn__burger{
-    width: 30px;
-    height: 3px;
-    background: #fff;
-    border-radius: 5px;
-    transition: all .5s ease-in-out;
-}
-
-.menu-btn__burger::before, .menu-btn__burger::after{
-    content: "";
-    width: 30px;
-    height: 3px;
-    background: #fff;
-    border-radius: 6px;
-    position: absolute;
-}
-
-.menu-btn__burger::before{
-    transform: translateY(10px);
-}
-
-.menu-btn__burger::after{
-    transform: translateY(-10px);
-}
-
-.menu-btn.open .menu-btn__burger{
-    transform: translateX(-50px);
-    background: transparent;
-    box-shadow: none;
-}
-
-.menu-btn.open .menu-btn__burger::before{
-    transform: rotate(45deg);
-    right: -200px;
-    
-}
-
-.menu-btn.open .menu-btn__burger::after{
-    transform: rotate(-45deg) ;
-    right: -200px;
-    
-}
-
-
-#home-sec{
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(images/background2.png);
-    background-size: cover;
-    background-attachment: fixed; 
-    height:  100vh;
-    min-height: 500px;
-    
-}
-
-
-/* Navigation */
-.navbar{
-    display: flex;
-    justify-content: flex-end;
+header{
     position: fixed;
     width: 100%;
-    background: #222831;
-    padding: 15px;
-    box-shadow: 3px 9px 31px 1px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 3px 9px 31px 1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 3px 9px 31px 1px rgba(0,0,0,0.75);
+    background: #262432;
+    padding: 0 10px;
+    box-shadow: -1px 10px 17px -5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 10px 17px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 10px 17px -5px rgba(0,0,0,0.75);
 }
 
-.navbar-menu a{
-    margin-left: 10px;
-    margin-right: 20px;
-    text-decoration: none;
+header .logo{
+    float: left;
     color: #fff;
-    border-bottom: 2px solid transparent;
-    transition: all .5s ease;
-    
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 50px;
 }
 
-.navbar-menu a:focus{
-    border-bottom: 2px solid aqua;
+.nav-bar{
+    float: right;
+
 }
 
-.navbar-menu a:hover{
-    color: aqua;
-    
+.nav-bar ul{
+    display: flex;
+    list-style: none;
+    line-height: 50px;
 }
 
+.nav-bar li a{
+    text-decoration: none;
+    margin: 20px;
+    color: #fff;
+}
 
-.navbar-menu :nth-child(5){
+.nav-bar li:nth-child(5) a{
     background-color: aqua;
     border: 1px solid aqua;
+    padding: 5px;
     border-radius: 50px;
-    padding:4px;
     color: #111;
+    transition: .3s ease-out ;
 }
 
-.navbar-menu :nth-child(5):hover{
-    background-color:transparent;
+.nav-bar li:nth-child(5) a:hover{
+    background-color:transparent ;
     color: #fff;
+}
+
+li{
+    transition: 0.5s;
+}
+
+li.active:not(:last-child) {
+    border-bottom: 3px solid aqua;
+    border-radius: 4px;
 
 }
 
-/* Home Section */
-.home{
-    display: grid;
-    justify-content: center;
-    top:250px;
-    position: relative;
-    
-    
+.menu-toggle-open{
+    float: right;
+    margin: 10px 30px;
+    font-size: 32px;
+    display: none;
 }
 
-.home h1{
-    margin-bottom: 40px;
-    font-size:62px;
-    color: #fff;
+
+
+.menu-toggle-close{
+    display: none;
+    font-size: 32px;
+}
+
+body{
+    background:  linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3) ), url(images/background2.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-content{
+    display: block;
     text-align: center;
-    font-weight: 400;
+    position: relative;
+    top: 250px;
+    z-index: -1;
 }
 
-.animate{
+.home-content h1{
+    color:#fff;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.home-content .text{
     color: aqua;
 }
 
-.home .icons{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 40px;
+.socmed-icons{
+    margin-top: 20px;
 }
 
-.home .icons a{
+.socmed-icons a{
     text-decoration: none;
-    color: #EEEEEE ;
-    margin: 20px;
-    font-size: 20px;
-    transition: .5s ease;
-}
-
-.home .icons a:hover{
-    color:aqua;
-}
-
-.home-button{
-    display: flex;
-    justify-content: center;
-    font-size: 16px;
-   
-}
-
-.home-button a:nth-child(1){
-    border: 1px solid aqua;
-    border-radius: 10px;
+    margin: 0 10px;
     color: #fff;
-    padding:10px 35px;
-    text-decoration: none;
-    margin-left:20px;
-    margin-right: 20px;
-    transition: .5s ease;
-}
-.home-button a:nth-child(1):hover{
-    background-color: aqua;
-    color: #111;
+    font-size: 18px;
+    transition: .3s ease;
 }
 
-.home-button a:nth-child(2){
-    border: 1px solid aqua;
-    background-color: aqua;
-    border-radius: 10px;
-    color: #111;
-    padding: 10px 35px;
-    text-decoration: none;
-    margin-left:20px;
-    margin-right: 20px;
-    transition: .5s ease;
+.socmed-icons a:hover{
+    color: aqua;
 }
 
-.home-button a:nth-child(2):hover{
-    color:#fff;
-    background-color: transparent;
-}
+@media screen and (max-width: 900px) {
+    header{
+        background: transparent;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+    }
 
-/* Mobile Screen Adaptation */
-@media screen and (max-width: 720px) {
-    .navbar{
-        
-        background-color: #222831;
-        height: 100vh;
+    header .logo{
+        margin: 10px;
+    }
+    
+    .nav-bar{
+        position: absolute;
+        background: #F2ECFF;
         width: 100%;
-        right: -50%;
-        transition: all .5s ;
-        z-index: 999;
-        max-width: fit-content;
-    }
-
-    .navbar-menu a{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: 180px;
-    right: 50px;
-    text-align: center;
-    margin: 20px;
-    font-size:20px;
-    }
-
-    .navbar.active{
-        right: 0%;
-    }
-
-    .menu-btn{
-        display: flex;
-        right:180px;
-        
-        
-    }
-
-    .home h1{
-        font-size: 35px;
-    }
-    
-    .home-button{
-        display: grid;
-    }
-
-    .home-button a{
-        font-size: 16px;
-        margin-top: 15px;
-        text-align: center;
-        
-    }
-
-    .home-button a:nth-child(1), .home-button a:nth-child(2){
-         padding: 8px 15px;
-    }
-
-    #home-sec{
-        background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(images/bg2.png);
-        background-size: cover;
-        background-attachment: fixed; 
-        height:  100vh;
-        min-height: 500px;
-        
-    }
-    
-}
-
-@media screen and (max-width: 600px) {
-    .navbar{
-        right: -60%;
-    }
-}
-
-@media screen and (max-width: 550px) {
-    .navbar{
-        right: -65%;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .navbar{
-        right: -70%;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .navbar{
-        right: -75%;
-    }
-}
-
-@media screen and (max-width: 420px) {
-    .navbar{
-        right: -85%;
-    }
-}
-
-@media screen and (max-width: 380px) {
-    .navbar{
-        right: -90%;
-    }
-}
-
-@media screen and (max-width: 360px) {
-    .navbar{
+        height: 100vh;
         right: -100%;
+        transition: .5s;
     }
+
+    .nav-bar.active{
+        right: -25%;
+    }
+
+    
+    .nav-bar ul,.nav-bar li a,.menu-toggle-close{
+        margin: 10px;
+        display: block;
+        color: #111;
+    }
+
+    .menu-toggle-close{
+        margin: 10px 20px;
+    }
+
+    .menu-toggle-open{
+        display: block;
+        color: #fff;
+        transition: .5s;
+    }
+    .menu-toggle-open.slide{
+        transform: translateX(100px);
+    }
+
+    .nav-bar li a{
+        transition: .3s ease;
+    }
+
+    
+
+    .nav-bar li:nth-child(5) a{
+         background: none;
+         border: none;
+         border-radius: 0;
+         padding: 0;
+
+    }
+
+    body{
+        background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3) ), url(images/bg2.png);
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .home-content h1{
+        font-size: 32px;
+    }
+     
+   li.active{
+       background-color: aqua;
+       border-radius: 5px ;
+       padding: 5px;
+   }
+    
 }
 
-@media screen and (max-width: 320px) {
-    .navbar{
-        right: -110%;
+@media not all and (hover: hover){
+    .nav-bar li:nth-child(5) a:hover{
+        color: #111;
     }
 }
-
-@media screen and (max-width: 300px) {
-    .navbar{
-        right: -120%;
-    }
-}
-
-@media screen and (max-width: 280px) {
-    .navbar{
-        right: -130%;
-    }
-}
-
 
