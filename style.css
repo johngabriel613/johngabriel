@@ -209,7 +209,7 @@ body{
     }
 
     .home-content h1{
-        font-size: 32px;
+        font-size: 38px;
     }
      
    li.active{
@@ -228,11 +228,25 @@ body{
 
 .home-btn a{
     margin: 10px;
-    font-size: 12px;
+    font-size: 15px;
 
     }
 }
 
+@media screen and (max-width: 400px) {
+    .home-content h1{
+        font-size: 30px;
+    }
 
+    .home-btn a{
+        font-size: 12px;
+    }
+}
+
+@media not all and (hover:hover) {
+    .nav-bar li:nth-child(5) a:hover{
+        color: #111;
+    }
+}
 
 
