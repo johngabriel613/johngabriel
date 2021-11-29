@@ -233,13 +233,13 @@ body{
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 375px) {
     .home-content h1{
         font-size: 30px;
     }
 
     .home-btn a{
-        font-size: 12px;
+        font-size: 13px;
     }
 }
 
