@@ -33,3 +33,25 @@ var typed = new Typed('.text', {
 $(document).on('click', 'ul li', function(){
     $(this).addClass('active').siblings ().removeClass('active')
      })
+
+//Page Nav
+var Home = document.querySelector('.home')
+var Homebtn = document.querySelector('.home-button')
+var About = document.querySelector('.about')
+var Aboutbtn = document.querySelector('.abt-btn')
+var Menudark = document.querySelector('.color')
+var Logo = document.querySelector('.logo')
+
+Homebtn.addEventListener('click', () => {
+    Home.classList.add('active')
+    About.classList.remove('active')
+    Menudark.classList.remove('dark')
+    Logo.classList.remove('dark')
+})
+
+Aboutbtn.addEventListener('click', () => {
+    Home.classList.remove('active')
+    About.classList.add('active')
+    Menudark.classList.add('dark')
+    Logo.classList.add('dark')
+})

@@ -18,8 +18,8 @@
         </div>
 
         <ul>
-            <li class="active "><a  href="#">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
+            <li class="active "><a class="home-button" href="#home">HOME</a></li>
+            <li><a class="abt-btn" href="#about">ABOUT</a></li>
             <li><a href="#">EDUCATION</a></li>
             <li><a href="#">PROJECTS</a></li>
             <li><a href="#">CONTACT</a></li>
@@ -28,11 +28,11 @@
     </nav>
 
     <div class="menu-toggle-open">
-        <i class="fal fa-bars"></i>
+        <i class="fal fa-bars color"></i>
     </div>
 </header>
 <body>
-   <section id="home">
+   <section id="home" class="home active">
        <div class="home-content">
            <h1>Hi I'm <span class="text"></span></h1>
            <script src="typed.js"></script>
@@ -48,6 +48,19 @@
             </div>
        </div>
    </section>
+
+   <section id="about" class="about">
+       <h1 class="section-title">About</h1>
+       <div class="about-content">
+       <img src="images/profile-circle.png" alt="profile-john-gabriel-paderog" width="200px" height="auto">
+        <div class="about-text">
+            <h3>Hi I'm John Gabriel Paderog</h3>
+            <h4><span>Programmer</span> <span class="dot">Developer</span> <span class="dot">Designer</span></h4>
+            <p> I am a 1st year computer science student at  Eulogio "Amang" Rodriguez Institute of Science and Technology(EARIST). I made a personal website using HTML, CSS, and Javascript. This is the first website I've design and created. I also do editing such as photo manipulation, video editing, and layout.</p>
+        </div>
+
+        </div>
+    </section>
 </body>
 <script src="script.js"></script>
 </html>
