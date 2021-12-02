@@ -29,14 +29,13 @@ header .logo{
     line-height: 50px;
 }
 
-header .logo.dark{
-    color: #262432;
-}
+
 
 .nav-bar{
     float: right;
 
 }
+
 
 .nav-bar ul{
     display: flex;
@@ -78,17 +77,10 @@ li.active:not(:last-child) {
     float: right;
     margin: 10px 30px;
     font-size: 32px;
-    display: none;
 }
-
-.menu-toggle-open .dark{
-    color: #262432;
-}
-
 
 
 .menu-toggle-close{
-    display: none;
     font-size: 32px;
 }
 
@@ -97,7 +89,6 @@ li.active:not(:last-child) {
     background-attachment: fixed;
     background-size: cover;
     height: 100vh;
-    display: none;
 }
 .home.active{
     display: block;
@@ -168,8 +159,6 @@ li.active:not(:last-child) {
 
 .about{
     height: 100vh;
-    width: 100vw;
-    display: none;
     padding: 50px 0;
 }
 
@@ -232,6 +221,52 @@ li.active:not(:last-child) {
     margin: 15px 0;
 }
 
+.about-content h4{
+    color: #262432;
+}
+
+.about h2{
+    text-align: center;
+}
+
+.skill{
+    margin: 30px 50px;
+}
+
+.skill-name{
+    font-weight: 500;
+}
+
+.skill-bar{
+    background-color: #262432;
+    border-radius: 50px;
+    width: 100%;
+    height: 15px;
+    
+}
+
+.skill-per{
+    background-color: aqua;
+    width: 100%;
+    height: 15px;
+    border-radius: 50px;
+    position: relative;
+    bottom: 15px;
+    animation: fillBars 5s 1 linear;
+}
+
+@keyframes fillBars{
+    from{
+        width: 0;
+    }  to{
+        width: 100%;
+    }
+}
+
+
+.menu-toggle-open, .nav-bar h6, .menu-toggle-close, .home, .about{
+    display: none;
+}
 
 
 
@@ -243,17 +278,26 @@ li.active:not(:last-child) {
         -moz-box-shadow: none;
     }
 
+    .nav-bg.white{
+        background-color: #fff;
+    }
+
     header .logo{
         margin: 10px;
+    }
+
+    header .logo.dark{
+        color: #262432;
     }
     
     .nav-bar{
         position: absolute;
         background: #F2ECFF;
         width: 100%;
-        height: 100vh;
+        height: 150vh;
         right: -100%;
         transition: .5s;
+        top: -5px;
     }
 
     .nav-bar.active{
@@ -267,6 +311,16 @@ li.active:not(:last-child) {
         color: #111;
     }
 
+    .nav-bar h6{
+        color: gray;
+        font-size: 14px;
+        margin: 20px;
+        font-weight: 400;
+        display: block;
+    }
+
+    
+
     .menu-toggle-close{
         margin: 10px 20px;
     }
@@ -278,6 +332,9 @@ li.active:not(:last-child) {
     }
     .menu-toggle-open.slide{
         transform: translateX(100px);
+    }
+    .menu-toggle-open .dark{
+        color: #262432;
     }
 
     .nav-bar li a{

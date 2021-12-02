@@ -41,12 +41,17 @@ var About = document.querySelector('.about')
 var Aboutbtn = document.querySelector('.abt-btn')
 var Menudark = document.querySelector('.color')
 var Logo = document.querySelector('.logo')
+var NavBckgrnd = document.querySelector('.nav-bg')
 
 Homebtn.addEventListener('click', () => {
     Home.classList.add('active')
     About.classList.remove('active')
     Menudark.classList.remove('dark')
     Logo.classList.remove('dark')
+    NavBckgrnd.classList.remove('white')
+    navBar.classList.remove('active')
+    menuBtn.classList.remove('slide')
+
 })
 
 Aboutbtn.addEventListener('click', () => {
@@ -54,4 +59,7 @@ Aboutbtn.addEventListener('click', () => {
     About.classList.add('active')
     Menudark.classList.add('dark')
     Logo.classList.add('dark')
+    NavBckgrnd.classList.add('white')
+    navBar.classList.remove('active')
+    menuBtn.classList.remove('slide')
 })
