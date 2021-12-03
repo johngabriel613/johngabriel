@@ -7,12 +7,16 @@ let menuOpen = false;
 menuBtn.addEventListener('click', () => {
     navBar.classList.add('active')
     menuBtn.classList.add('slide')
+    Home.classList.add('blur')
+    About.classList.add('blur')
     menuOpen = true;
 })
 
 menuBtn2.addEventListener('click', () => {
     navBar.classList.remove('active')
     menuBtn.classList.remove('slide')
+    Home.classList.remove('blur')
+    About.classList.remove('blur')
     menuOpen = false;
 })
 
@@ -29,10 +33,6 @@ var typed = new Typed('.text', {
     loop: true
 });
 
-//Navigation bar
-$(document).on('click', 'ul li', function(){
-    $(this).addClass('active').siblings ().removeClass('active')
-     })
 
 //Page Nav
 var Home = document.querySelector('.home')
@@ -45,21 +45,29 @@ var NavBckgrnd = document.querySelector('.nav-bg')
 
 Homebtn.addEventListener('click', () => {
     Home.classList.add('active')
+    Homebtn.classList.add('present')
     About.classList.remove('active')
+    Aboutbtn.classList.remove('present')
     Menudark.classList.remove('dark')
     Logo.classList.remove('dark')
     NavBckgrnd.classList.remove('white')
     navBar.classList.remove('active')
     menuBtn.classList.remove('slide')
+    Home.classList.remove('blur')
+    About.classList.remove('blur')
 
 })
 
 Aboutbtn.addEventListener('click', () => {
     Home.classList.remove('active')
+    Homebtn.classList.remove('present')
     About.classList.add('active')
+    Aboutbtn.classList.add('present')
     Menudark.classList.add('dark')
     Logo.classList.add('dark')
     NavBckgrnd.classList.add('white')
     navBar.classList.remove('active')
     menuBtn.classList.remove('slide')
+    Home.classList.remove('blur')
+    About.classList.remove('blur')
 })

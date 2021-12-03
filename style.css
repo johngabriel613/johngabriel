@@ -47,6 +47,11 @@ header .logo{
     text-decoration: none;
     margin: 20px;
     color: #fff;
+    
+}
+
+.nav-bar li a.present{
+    color: aqua;
 }
 
 .nav-bar li:nth-child(5) a{
@@ -67,11 +72,7 @@ li{
     transition: 0.5s;
 }
 
-li.active:not(:last-child) {
-    border-bottom: 1px solid aqua;
-    border-top: 1px solid aqua;
 
-}
 
 .menu-toggle-open{
     float: right;
@@ -230,7 +231,7 @@ li.active:not(:last-child) {
 }
 
 .skill{
-    margin: 30px 50px;
+    margin: 20px 200px;
 }
 
 .skill-name{
@@ -311,6 +312,13 @@ li.active:not(:last-child) {
         color: #111;
     }
 
+    .nav-bar li a.present{
+        color: #111;
+        background-color: aqua;
+        padding: 10px 5px;
+        border-radius: 5px;
+    }
+
     .nav-bar h6{
         color: gray;
         font-size: 14px;
@@ -363,13 +371,17 @@ li.active:not(:last-child) {
        border-top: 1px solid aqua;
    }
 
-   .home-btn{
+   .home.blur, .about.blur{
+    -webkit-filter: blur(1px);
+   }
+
+    .home-btn{
     display:grid;
     margin: 10px;
     }
 
 
-.home-btn a{
+    .home-btn a{
     margin: 10px;
     font-size: 15px;
 
@@ -395,6 +407,10 @@ li.active:not(:last-child) {
     .about-text span:not(:last-child)::after {
         width: 5px;
         height: 5px;
+    }
+
+    .skill{
+        margin: 20px 50px;
     }
 
 }
