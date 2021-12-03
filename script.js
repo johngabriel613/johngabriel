@@ -20,20 +20,6 @@ menuBtn2.addEventListener('click', () => {
     menuOpen = false;
 })
 
-//Typing Animation
-var typed = new Typed('.text', {
-    strings: [
-        "John Gabriel",
-        "A Developer",
-        "A Programmer",
-        "A Designer"
-    ], 
-    typeSpeed: 70,
-    backSpeed: 70,
-    loop: true
-});
-
-
 //Page Nav
 var Home = document.querySelector('.home')
 var Homebtn = document.querySelector('.home-button')
@@ -71,3 +57,18 @@ Aboutbtn.addEventListener('click', () => {
     Home.classList.remove('blur')
     About.classList.remove('blur')
 })
+
+//Typing Animation
+var typed = new Typed('.text', {
+    strings: [
+        "John Gabriel",
+        "A Developer",
+        "A Programmer",
+        "A Designer"
+    ], 
+    typeSpeed: 70,
+    backSpeed: 70,
+    loop: true
+});
+
+

@@ -47,7 +47,12 @@ header .logo{
     text-decoration: none;
     margin: 20px;
     color: #fff;
-    
+    font-weight: 500;
+    transition: .3s ease;
+}
+
+.nav-bar li a:hover{
+    color: aqua;
 }
 
 .nav-bar li a.present{
@@ -86,7 +91,7 @@ li{
 }
 
 .home{
-    background:  linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4) ), url(images/bg3.jpg),no-repeat,center;
+    background:  linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4) ), url(images/bg3-min.jpg),no-repeat,center;
     background-attachment: fixed;
     background-size: cover;
     height: 100vh;
