@@ -10,7 +10,9 @@ menuBtn.addEventListener('click', () => {
     Home.classList.add('blur')
     About.classList.add('blur')
     Education.classList.add('blur')
+    Projects.classList.add('blur')
     Logo.classList.add('blur')
+
     
 })
 
@@ -20,6 +22,7 @@ menuBtn2.addEventListener('click', () => {
     Home.classList.remove('blur')
     About.classList.remove('blur')
     Education.classList.remove('blur')
+    Projects.classList.remove('blur')
     Logo.classList.remove('blur')
     
 })
@@ -31,9 +34,12 @@ var About = document.querySelector('.about')
 var Aboutbtn = document.querySelector('.abt-btn')
 var Education = document.querySelector('.education')
 var Educbtn = document.querySelector('.educ-btn')
+var Projects = document.querySelector('.projects')
+var Projbtn = document.querySelector ('.proj-btn')
 var Menudark = document.querySelector('.color')
 var Logo = document.querySelector('.logo')
 var NavBckgrnd = document.querySelector('.nav-bg')
+var Goback = document.querySelector('.back-btn')
 
 Homebtn.addEventListener('click', () => {
     Home.classList.add('active')
@@ -42,6 +48,8 @@ Homebtn.addEventListener('click', () => {
     Aboutbtn.classList.remove('present')
     Education.classList.remove('active')
     Educbtn.classList.remove('present')
+    Projects.classList.remove('active')
+    Projects.classList.remove('present')
     Menudark.classList.remove('dark')
     Logo.classList.remove('dark')
     NavBckgrnd.classList.remove('white')
@@ -50,6 +58,7 @@ Homebtn.addEventListener('click', () => {
     Home.classList.remove('blur')
     About.classList.remove('blur')
     Education.classList.remove('blur')
+    Projects.classList.remove('blur')
     Logo.classList.remove('blur')
 
 })
@@ -61,6 +70,8 @@ Aboutbtn.addEventListener('click', () => {
     Aboutbtn.classList.add('present')
     Education.classList.remove('active')
     Educbtn.classList.remove('present')
+    Projects.classList.remove('active')
+    Projects.classList.remove('present')
     Menudark.classList.add('dark')
     Logo.classList.add('dark')
     NavBckgrnd.classList.add('white')
@@ -69,6 +80,7 @@ Aboutbtn.addEventListener('click', () => {
     Home.classList.remove('blur')
     About.classList.remove('blur')
     Education.classList.remove('blur')
+    Projects.classList.remove('blur')
     Logo.classList.remove('blur')
 })
 
@@ -79,6 +91,8 @@ Educbtn.addEventListener('click', () => {
     Aboutbtn.classList.remove('present')
     Education.classList.add('active')
     Educbtn.classList.add('present')
+    Projects.classList.remove('active')
+    Projects.classList.remove('present')
     Menudark.classList.add('dark')
     Logo.classList.add('dark')
     NavBckgrnd.classList.add('white')
@@ -87,8 +101,32 @@ Educbtn.addEventListener('click', () => {
     Home.classList.remove('blur')
     About.classList.remove('blur')
     Education.classList.remove('blur')
+    Projects.classList.remove('blur')
     Logo.classList.remove('blur')
 })
+
+Projbtn.addEventListener('click', () => {
+    Home.classList.remove('active')
+    Homebtn.classList.remove('present')
+    About.classList.remove('active')
+    Aboutbtn.classList.remove('present')
+    Education.classList.remove('active')
+    Educbtn.classList.remove('present')
+    Projects.classList.add('active')
+    Projects.classList.add('present')
+    Menudark.classList.add('dark')
+    Logo.classList.add('dark')
+    NavBckgrnd.classList.add('white')
+    navBar.classList.remove('active')
+    menuBtn.classList.remove('slide')
+    Home.classList.remove('blur')
+    About.classList.remove('blur')
+    Education.classList.remove('blur')
+    Projects.classList.remove('blur')
+    Logo.classList.remove('blur')
+})
+
+
 
 //Typing Animation
 var typed = new Typed('.text', {
