@@ -179,7 +179,7 @@ li{
     width: 80px;
     height: 3px;
     background-color: #262432;
-    top: 90px;
+    top: 95px;
 }
 
 .section-title::after{
@@ -189,7 +189,7 @@ li{
     width: 15px;
     height: 15px;
     position: absolute;
-    top: 80px;
+    top: 85px;
 }
 
 .about-content{
@@ -390,6 +390,78 @@ li{
     display: none;
 }
 
+.contact{
+    padding: 30px;
+    height: 100vh;
+    display: none;
+}
+
+.contact.active{
+    display: block;
+}
+
+.info{
+    display: flex;
+    justify-content:center; 
+    flex-wrap: wrap;
+}
+
+.wrap{
+    border: 1px solid #262432;
+    padding: 40px;
+    margin:20px;
+    width: 200px;
+    border-radius: 15px;
+    box-shadow: -1px 6px 42px -20px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 6px 42px -20px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 6px 42px -20px rgba(0,0,0,0.75);
+    text-align: center;
+}
+
+#center-text{
+    left: -10px;
+    position: relative;
+}
+
+.wrap i{
+    display: block;
+    font-size: 46px;
+    margin: 10px;    
+}
+
+form:last-child{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+form input{
+    height: 20px;
+}
+
+form input:not(:last-child), textarea{
+    margin: 10px;
+    width: 925px;
+    background-color: #262432;
+    border-radius: 4px;
+    color: #fff;
+    padding: 10px;
+}
+
+#firstname, #surname{
+    width: 441px;
+    margin:10px;
+}
+
+.submit-btn{
+    color:#111;
+    background-color: aqua;
+    width: 950px;
+    padding:10px 0 20px;
+    margin: 10px;
+}
+
 
 
 @media screen and (max-width: 900px) {
@@ -471,7 +543,6 @@ li{
     }
 
     
-
     .nav-bar li:nth-child(5) a{
          background: none;
          border: none;
@@ -492,7 +563,7 @@ li{
        border-top: 1px solid aqua;
    }
 
-   .home.blur, .about.blur, .education.blur, .projects.blur, .logo.blur{
+   .home.blur, .about.blur, .education.blur, .projects.blur, .contact.blur, .logo.blur{
     -webkit-filter: blur(1px);
    }
 
@@ -558,6 +629,27 @@ li{
     .projects h1{
         margin-top: 20px;
     }
+
+    .project-content p{
+        font-size: 17px;
+    }
+
+    .project-content span{
+        font-size: 13px;
+    }
+
+    .wrap{
+        width: 150px;
+        font-size: 12px;
+        margin: 10px;
+    }
+
+    .wrap i{
+        font-size: 35px;
+        margin: 10px;
+    }
+    
+
 }
 
 @media screen and (max-width: 375px) {

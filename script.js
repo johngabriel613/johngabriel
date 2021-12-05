@@ -11,6 +11,7 @@ menuBtn.addEventListener('click', () => {
     About.classList.add('blur')
     Education.classList.add('blur')
     Projects.classList.add('blur')
+    Contact.classList.add('blur')
     Logo.classList.add('blur')
 
     
@@ -23,9 +24,12 @@ menuBtn2.addEventListener('click', () => {
     About.classList.remove('blur')
     Education.classList.remove('blur')
     Projects.classList.remove('blur')
+    Contact.classList.remove('blur')
     Logo.classList.remove('blur')
     
 })
+
+
 
 //Page Nav
 var Home = document.querySelector('.home')
@@ -36,6 +40,8 @@ var Education = document.querySelector('.education')
 var Educbtn = document.querySelector('.educ-btn')
 var Projects = document.querySelector('.projects')
 var Projbtn = document.querySelector ('.proj-btn')
+var Contact = document.querySelector('.contact')
+var Contactbtn = document.querySelector('.contact-btn')
 var Menudark = document.querySelector('.color')
 var Logo = document.querySelector('.logo')
 var NavBckgrnd = document.querySelector('.nav-bg')
@@ -49,7 +55,7 @@ Homebtn.addEventListener('click', () => {
     Education.classList.remove('active')
     Educbtn.classList.remove('present')
     Projects.classList.remove('active')
-    Projects.classList.remove('present')
+    Projbtn.classList.remove('present')
     Menudark.classList.remove('dark')
     Logo.classList.remove('dark')
     NavBckgrnd.classList.remove('white')
@@ -71,7 +77,9 @@ Aboutbtn.addEventListener('click', () => {
     Education.classList.remove('active')
     Educbtn.classList.remove('present')
     Projects.classList.remove('active')
-    Projects.classList.remove('present')
+    Projbtn.classList.remove('present')
+    Contact.classList.remove('active')
+    Contactbtn.classList.remove('present')
     Menudark.classList.add('dark')
     Logo.classList.add('dark')
     NavBckgrnd.classList.add('white')
@@ -92,7 +100,9 @@ Educbtn.addEventListener('click', () => {
     Education.classList.add('active')
     Educbtn.classList.add('present')
     Projects.classList.remove('active')
-    Projects.classList.remove('present')
+    Projbtn.classList.remove('present')
+    Contact.classList.remove('active')
+    Contactbtn.classList.remove('present')
     Menudark.classList.add('dark')
     Logo.classList.add('dark')
     NavBckgrnd.classList.add('white')
@@ -113,7 +123,9 @@ Projbtn.addEventListener('click', () => {
     Education.classList.remove('active')
     Educbtn.classList.remove('present')
     Projects.classList.add('active')
-    Projects.classList.add('present')
+    Projbtn.classList.add('present')
+    Contact.classList.remove('active')
+    Contactbtn.classList.remove('present')
     Menudark.classList.add('dark')
     Logo.classList.add('dark')
     NavBckgrnd.classList.add('white')
@@ -126,7 +138,41 @@ Projbtn.addEventListener('click', () => {
     Logo.classList.remove('blur')
 })
 
+Goback.addEventListener('click', () => {
+    Home.classList.add('active')
+    Homebtn.classList.add('present')
+    Projects.classList.remove('active')
+    Projbtn.classList.remove('present')
+    Menudark.classList.remove('dark')
+    Logo.classList.remove('dark')
+    NavBckgrnd.classList.remove('white')
 
+    
+})
+
+Contactbtn.addEventListener('click', () => {
+    Home.classList.remove('active')
+    Homebtn.classList.remove('present')
+    About.classList.remove('active')
+    Aboutbtn.classList.remove('present')
+    Education.classList.remove('active')
+    Educbtn.classList.remove('present')
+    Projects.classList.remove('active')
+    Projbtn.classList.remove('present')
+    Contact.classList.add('active')
+    Contactbtn.classList.add('present')
+    Menudark.classList.add('dark')
+    Logo.classList.add('dark')
+    NavBckgrnd.classList.add('white')
+    navBar.classList.remove('active')
+    menuBtn.classList.remove('slide')
+    Home.classList.remove('blur')
+    About.classList.remove('blur')
+    Education.classList.remove('blur')
+    Projects.classList.remove('blur')
+    Contact.classList.remove('blur')
+    Logo.classList.remove('blur')
+})
 
 //Typing Animation
 var typed = new Typed('.text', {
