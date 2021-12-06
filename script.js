@@ -225,6 +225,8 @@ Contactme.addEventListener('click', () => {
     Educbtn.classList.add('dark')
     Projbtn.classList.add('dark')
     Contactbtn.classList.add('dark')
+
+    Contact.classList.remove('blur')
 })
 
 //Typing Animation
