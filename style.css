@@ -10,11 +10,7 @@
 header{
     position: fixed;
     width: 100%;
-    background: #262432;
     padding: 5px 10px;
-    box-shadow: 0px 10px 29px -22px rgba(0,0,0,0.75);
--webkit-box-shadow: 0px 10px 29px -22px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 10px 29px -22px rgba(0,0,0,0.75);
     z-index: 999;
 }
 
@@ -29,7 +25,13 @@ header .logo{
     line-height: 50px;
 }
 
+header .logo.dark{
+    color: #262432;
+}
 
+.nav-bg.white{
+    background-color: #fff;
+}
 
 .nav-bar{
     float: right;
@@ -44,11 +46,16 @@ header .logo{
 }
 
 .nav-bar li a{
+    font-size: 17px;
     text-decoration: none;
     margin: 20px;
     color: #fff;
     font-weight: 500;
     transition: .3s ease;
+}
+
+.nav-bar li a.dark{
+    color: #111;
 }
 
 .nav-bar li a:hover{
@@ -66,6 +73,10 @@ header .logo{
     border-radius: 50px;
     color: #111;
     transition: .3s ease-out ;
+}
+
+.nav-bar li:nth-child(5) a.dark:hover{
+    color: #111;
 }
 
 .nav-bar li:nth-child(5) a:hover{
@@ -90,8 +101,10 @@ li{
     font-size: 32px;
 }
 
+
+
 .home{
-    background:  linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4) ), url(images/bg3-min.jpg),no-repeat,center;
+    background:  linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5) ), url(images/bg3-min.jpg),no-repeat,center;
     background-attachment: fixed;
     background-size: cover;
     height: 100vh;
@@ -316,13 +329,14 @@ li{
     padding: 30px;
     margin-top: 20px;
     position: relative;
+    border: 1px solid #262432;
 }
 
 .block::before{
     content: '';
     position: absolute;
     height: 190px;
-    width: 2px;
+    width: 3px;
     background-color: #262432;
     left: -20px;
     top: -20px;
@@ -331,11 +345,11 @@ li{
 .block::after{
     content: '';
     position: absolute;
-    width: 15px;
-    height: 15px;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
     background-color: aqua;
-    left: -25px;
+    left: -26px;
     top: 60px;
 }
 
@@ -429,6 +443,10 @@ li{
     margin: 10px;    
 }
 
+form{
+    padding: 20px 0;
+}
+
 form:last-child{
     display: flex;
     flex-wrap: wrap;
@@ -443,11 +461,18 @@ form input{
 form input:not(:last-child), textarea{
     margin: 10px;
     width: 925px;
-    background-color: #262432;
-    border-radius: 4px;
+    background-color: #424149;
+    border-radius: 8px;
     color: #fff;
     padding: 10px;
+    border: none;
 }
+
+::placeholder {
+    color:#c4c4c4;
+    opacity: 1; 
+  }
+
 
 #firstname, #surname{
     width: 441px;
@@ -460,6 +485,8 @@ form input:not(:last-child), textarea{
     width: 950px;
     padding:10px 0 20px;
     margin: 10px;
+    border:none ;
+    border-radius: 6px;
 }
 
 
@@ -472,16 +499,8 @@ form input:not(:last-child), textarea{
         -moz-box-shadow: none;
     }
 
-    .nav-bg.white{
-        background-color: #fff;
-    }
-
     header .logo{
         margin: 10px;
-    }
-
-    header .logo.dark{
-        color: #262432;
     }
     
     .nav-bar{
@@ -505,13 +524,7 @@ form input:not(:last-child), textarea{
         color: #111;
     }
 
-    .nav-bar li a.present{
-        color: #111;
-        background-color: aqua;
-        padding: 10px 5px;
-        border-radius: 5px;
-    }
-
+    
     .nav-bar h6{
         color: gray;
         font-size: 14px;
@@ -550,6 +563,14 @@ form input:not(:last-child), textarea{
          padding: 0;
 
     }
+
+    .nav-bar li a.present{
+        color: #111;
+        background-color: aqua;
+        padding: 10px 5px;
+        border-radius: 5px;
+    }
+
 
     .home-content h1{
         font-size: 36px;
