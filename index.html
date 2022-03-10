@@ -4,172 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000ff0">
+
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
 </head>
-<header class="nav-bg">
-    <h1 class="logo">.johndev</h1>
-    <nav class="nav-bar">
-        <div class="menu-toggle-close">
-            <i class="fal fa-times"></i>
-        </div>
-        <h6>Menu</h6>
-        <ul>
-            <li><a class="home-button present" href="#">HOME</a></li>
-            <li><a class="abt-btn" href="#">ABOUT</a></li>
-            <li><a class="educ-btn" href="#">EDUCATION</a></li>
-            <li><a class="proj-btn" href="#">PROJECTS</a></li>
-            <li><a class="contact-btn" href="#">CONTACT</a></li>
-        </ul>
-       
-    </nav>
 
-    <div class="menu-toggle-open">
-        <i class="fal fa-bars color"></i>
+<header class="">
+    <div class="logo">
+        <h1><span>.</span>johndev</h1>
     </div>
+
+    <div class="open-menu">
+        <span></span>
+    </div>
+
+    <nav class="nav-bar">
+        <div class="close-menu">
+            <span></span>
+        </div>
+        <h4>Menu</h4>
+        <ul>
+            <li><a href="#Home" class="nav-links">Home</a></li>
+            <li><a href="#About" class="nav-links">About</a></li>
+            <li><a href="#" class="nav-links">Education</a></li>
+            <li><a href="#" class="nav-links">Projects</a></li>
+        </ul>
+    </nav>
 </header>
 <body>
-   <section id="home" class="home active">
-       <div class="home-content">
-           <h1>Hi I'm <span class="text"></span></h1>
-           <script src="typed.js"></script>
-           <div class="socmed-icons">
-               <a href="https://facebook.com/peizen.sheidan.5" target="_blank" class="fab fa-facebook-f"></a>
-               <a href="https://twitter.com/jan_gabriyel" target="_blank" class="fab fa-twitter"></a>
-               <a href="https://instagram.com/_jngbryl/" target="_blank" class="fab fa-instagram"></a>
+    <section id="Home">
+        <div class="layout">
+            <div class="main">
+                <h1>Hi I'm <span id="typed"></span> </h1>
+                <script src="typed.js"></script>
+            </div>
+    
+            <div class="social-icons">
+                <a href=""><i class="fa-brands fa-facebook-square"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
             </div>
 
-            <div class="home-btn">
-                <a href="#">Download CV</a>
-                <a class="contact-me" href="#">Contact Me</a>
+            <div class="main-button">
+                <a href="">Download CV</a>
+                <a href="">Contact Me</a>
             </div>
-       </div>
-   </section>
 
-   <section id="about" class="about">
-       <h1 class="section-title">About</h1>
-       <div class="about-content">
-            <img src="images/profile.png" alt="profile-john-gabriel-paderog" width="200px" height="150px">
-          <div class="about-text">
-            <h3>Hi I'm John Gabriel Paderog</h3>
-            <h4><span>Programmer</span> <span class="dot">Developer</span> <span class="dot">Designer</span></h4>
-            <p>My name is John Gabriel Paderog and I'm 18 years old. I am a former STEM student who graduated from AMA University. I am currently a first-year computer science student at the Eulogio "Amang" Rodriguez Institute of Science and Technology (EARIST). I'm an optimistic person. Playing online games, viewing documentaries, and watching computer tutorials on YouTube are some of my favorite pastimes. I've recently become interested in programming, coding, and other related topics, as I prefer to self-study while I'm not doing anything. This is my first time designing and building a website. This personal website was created with HTML, CSS, and Javascript. I also do photo editing, video editing, and layouts. I'm not sure if that's interesting. But I hope you get to know me, and that's all I have to say. Thank you.</p>
-          </div>
-        </div>
-
-        <h2>Web Development Skills</h2>
-
-        <div class="skill">
-            <div class="skill-name">HTML</div>
-            <div class="skill-bar"></div>
-            <div class="skill-per" per="90%" style="max-width: 90%;"></div>
-        </div>
-
-        <div class="skill">
-            <div class="skill-name">CSS</div>
-            <div class="skill-bar"></div>
-            <div class="skill-per" per="75%" style="max-width: 75%;"></div>
-        </div>
-
-        <div class="skill">
-            <div class="skill-name">Javascript</div>
-            <div class="skill-bar"></div>
-            <div class="skill-per" per="50%" style="max-width: 50%;"></div>
-        </div>
-    </section>
-
-    <section id="education" class="education">
-        <h1 class="section-title">Education</h1>
-            <div class="timeline">
-                <div class="block">
-                    <div class="year">
-                        <i class="fal fa-graduation-cap"></i>2009-2015
-                    </div>
-                    <h5>Elementary</h5>
-                    <h5>Masambong Elementary School</h5>
-                    <div class="location">
-                        <i class="fal fa-map-marker-alt"></i> 29 Wayan Street, Quezon City, 1105 NCR
-                    </div>
-                </div>
-
-                <div class="block">
-                    <div class="year">
-                        <i class="fal fa-graduation-cap"></i>2015-2019
-                    </div>
-                    <h5>Junior Highschool</h5>
-                    <h5>Sergio Osmeña Sr. Highschool</h5>
-                    <div class="location">
-                        <i class="fal fa-map-marker-alt"></i> Del Monte Ave. Cor. Araneta Ave. Quezon City 1115 NCR
-                    </div>
-                </div>
-
-                <div class="block">
-                    <div class="year">
-                        <i class="fal fa-graduation-cap"></i>2019-2021
-                    </div>
-                    <h5>Senior Highschool</h5>
-                    <h5>AMA University</h5>
-                    <div class="location">
-                        <i class="fal fa-map-marker-alt"></i> Maximina Street, Villa Arca Ave, Project 8, Quezon City
-                    </div>
-                </div>
-
-                <div class="block">
-                    <div class="year">
-                        <i class="fal fa-graduation-cap"></i>2021-present
-                    </div>
-                    <h5>College</h5>
-                    <h5>EARIST Manila</h5>
-                    <div class="location">
-                        <i class="fal fa-map-marker-alt"></i> Nagtahan St, Sampaloc, Manila, 1008 Metro Manila
-                    </div>
-                </div>
-            </div>
-    </section>
-
-    <section id="projects" class="projects">
-        <h1 class="section-title">Projects</h1>
-
-        <div class="project-content">
-            <p>No projects to show yet.</p>
-            <span>Please comeback when it's available.</span>
-            
-            <div class="go-back-btn">
-                <a href="#home" class="back-btn"><i class="fal fa-undo"></i>Go Back</a>
+            <div class="scroll-down">
+                <a href="#About"><span></span></a>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <h1 class="section-title">Get in Touch</h1>
-
-        <div class="info">
-            <div class="wrap">
-                <i class="fas fa-mobile-alt"></i><span>+639204653081</span>
-            </div>
-            <div class="wrap">
-                <i class="fal fa-envelope"></i><span id="center-text">paderogjohn28@gmail.com</span> 
-            </div>
-            <div class="wrap">
-                <i class="fal fa-map-marker-alt"></i><span>Quezon City, Philippines</span>
-            </div>
-        </div>
-
-        <div class="form">
-            <form action="https://formcarry.com/s/l3TWsFp3Npb" method="post">
-                <input type="text" name="firstName" id="firstname" placeholder="First name">
-                <input type="text" name="lastName" id="lastname" placeholder="Surname">
-                <input type="email" name="email" id="email" placeholder="Email">
-                <textarea name="message" id="message" cols="60" rows="10" placeholder="Type your message here..."></textarea>
-                <input type="hidden" name="_gotcha">
-                <input type="submit" value="Send Message" class="submit-btn">
-            </form>
-
-            
-        </div>
+    <section class="layout" id="About">
+        <h1>This is second page</h1>
     </section>
 </body>
-<script src="script.js"></script>
 </html>
