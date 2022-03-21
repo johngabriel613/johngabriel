@@ -212,6 +212,7 @@ body{
 
     .home-text, .home-image{
         justify-self: center;
+        -ms-grid-column-align:center;
     }
 
     .home-text{
