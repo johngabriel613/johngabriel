@@ -4,63 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#121212">
-
-    <title>Portfolio</title>
+    <title>John Gabriel Paderog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="main.js" defer></script>
 </head>
+<body class="dark-theme">
+    <nav class="navbar">
+        
+        <h1 class="logo"><span>.</span>johndev</h1>
 
-<header class="">
-    <div class="logo">
-        <h1><span>.</span>johndev</h1>
-    </div>
-
-    <div class="open-menu">
-        <span></span>
-    </div>
-
-    <nav class="nav-bar">
-        <div class="close-menu">
+        <div class="open-menu">
+            <span></span>
+            <span></span>
             <span></span>
         </div>
-        <h4>Menu</h4>
-        <ul>
-            <li><a href="#Home" class="nav-links">Home</a></li>
-            <li><a href="#About" class="nav-links">About</a></li>
-            <li><a href="#" class="nav-links">Education</a></li>
-            <li><a href="#" class="nav-links">Projects</a></li>
+
+        <ul class="navlist">
+            <li class="navitems"><a href="#">Home</a></li>
+            <li class="navitems"><a href="#">About</a></li>
+            <li class="navitems"><a href="#">Education</a></li>
+            <li class="navitems"><a href="#">Projects</a></li>
         </ul>
+
+        
     </nav>
-</header>
-<body>
-    <section id="Home">
-        <div class="layout">
-            <div class="main">
-                <h1>Hi I'm <span id="typed"></span> </h1>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <div class="home-image">
+                <img src="images/webpic.png" >
+            </div>
+
+            <div class="home-text">
+                <h1>Hello, I am <span id="typed"></span></h1>
                 <script src="typed.js"></script>
-            </div>
-    
-            <div class="social-icons">
-                <a href=""><i class="fa-brands fa-facebook-square"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
-            </div>
+                <script>
+                    var typed = new Typed('#typed', {
+                      strings: ['John Gabriel',
+                               'a Programmer',
+                               'a Developer'],
 
-            <div class="main-button">
-                <a href="">Download CV</a>
-                <a href="">Contact Me</a>
-            </div>
+                               loop: true,
+                               typeSpeed:30,
+                               backSpeed:30
+                    });
+                  </script>
+                  
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dolorem ullam porro voluptates, facilis aperiam numquam, mollitia sequi minus non impedit aut ratione incidunt.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
 
-            <div class="scroll-down">
-                <a href="#About"><span></span></a>
+                <div class="contact-btn">
+                    <a href="#">Contact Me <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
             </div>
         </div>
     </section>
-
-    <section class="layout" id="About">
-        <h1>This is second page</h1>
-    </section>
+    
 </body>
 </html>
