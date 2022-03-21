@@ -105,7 +105,7 @@ body{
 }
 
 .home-image{
-
+    justify-self: center;
     grid-area: 1/2;
     
 }
@@ -210,10 +210,7 @@ body{
         grid-area: 1;
     }
 
-    .home-text, .home-image{
-        
-    }
-
+    
     .home-text{
         align-self: flex-start;
     }
