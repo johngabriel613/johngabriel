@@ -201,13 +201,13 @@ body{
     }
     
     .home-content{
-        grid-template-columns: 1fr;
+        
         margin: 0 10px;
     }
 
     .home-image{
-        grid-area: 1;
         justify-self: center;
+        grid-area:2;
     }
 
     
