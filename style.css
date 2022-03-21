@@ -112,7 +112,7 @@ body{
 
 .home-image img{
     max-width: 30vw;
-    min-width: 380px;
+    min-width: 320px;
 }
 
 .home-text{
@@ -175,6 +175,7 @@ body{
 @media only screen and (max-width:720px){
     .navbar{
         width:100vw ;
+       
     }
    
     .navlist{
@@ -183,19 +184,19 @@ body{
         width: 200px;
         height: fit-content;
         background-color: #808080;
-        right: -300px;
         border-radius: 20px;
         transition: .5s ease;
+        text-align: center;
+        right: -100%;
     }
 
     .navlist.open{
-        transform: translate(-50%, 50%);
-        left: 50%;
+        transform: translate(-50%, 100%);
         top: 50%;
+        left: 50%;
     }
 
     .navitems{
-        text-align: center;
         line-height: 2rem;
         margin: 20px;
     }
@@ -211,6 +212,10 @@ body{
 
     .home-text, .home-image{
         justify-self: center;
+    }
+
+    .home-text{
+        align-self: flex-start;
     }
 
 }
