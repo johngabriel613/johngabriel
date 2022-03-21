@@ -106,6 +106,7 @@ body{
 
 .home-image{
     justify-self: center;
+    grid-area: 1/2;
     
 }
 
@@ -209,15 +210,14 @@ body{
         grid-area: 1;
     }
 
-    
+    .home-text, .home-image{
+        justify-self: center;
+        -ms-grid-column-align:center;
+    }
+
     .home-text{
         align-self: flex-start;
     }
 
 }
 
-@media only screen and (max-width:420px){
-    .home-image{
-        min-width: 200px;
-    }
-} 
