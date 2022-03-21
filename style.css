@@ -104,7 +104,7 @@ body{
 }
 
 .home-image{
-    justify-self: center;
+   
     grid-area: 1/2;
     
 }
@@ -207,15 +207,14 @@ body{
 
     .home-image{
         grid-area: 1;
+        justify-self: center;
     }
 
-    .home-text, .home-image{
-        justify-self: center;
-        
-    }
+    
 
     .home-text{
         align-self: flex-start;
+        justify-self: center;
     }
 
 }
