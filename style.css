@@ -96,6 +96,10 @@ body{
     background-color: var(--primary-color);
 }
 
+.layout{
+    margin:0 10px;
+}
+
 .home-content{
     display: grid;
     align-items: center;
@@ -104,18 +108,18 @@ body{
 }
 
 .home-image{
-   
+    justify-self: center;
     grid-area: 1/2;
-    
 }
 
 .home-image img{
     max-width: 30vw;
-    min-width: 320px;
+    min-width: 200px;
 }
 
 .home-text{
     max-width: 500px;
+    min-width: 100px;
     justify-self: flex-end;
 }
 
@@ -134,7 +138,7 @@ body{
 }
 
 .home-text h1, .home-content p, .social-icons{
-    margin: 20px 0 20px 10px;
+    margin: 10px 0;
 }
 
 .social-icons{
@@ -147,7 +151,7 @@ body{
 }
 
 .contact-btn{
-    margin: 30px 0 20px 5px;
+    margin: 30px 0;
 }
 
 .contact-btn a{
@@ -207,7 +211,7 @@ body{
 
     .home-image{
         justify-self: center;
-        grid-area:2;
+        grid-area: 1;
     }
 
     
