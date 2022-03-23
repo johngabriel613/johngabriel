@@ -12,3 +12,13 @@ OpenMenu.addEventListener('click', () => {
     menuBar[2].classList.toggle('open')
 })
 
+const darkbtn = document.querySelector('.dark-btn')
+const dark = document.querySelector('.dark')
+const sunbtn= document.querySelector('.light')
+
+darkbtn.addEventListener('click', () => [
+    document.body.classList.toggle('dark-theme'),
+    dark.classList.toggle('on'),
+    sunbtn.classList.toggle('on')
+
+])

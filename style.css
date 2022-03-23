@@ -16,15 +16,19 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    background:var(--primary-color);
+    transition: background 500ms;
 }
 
 .navbar{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     position: fixed;
     transform: translateX(-50%);
     left: 50%;
-    width: 700px;
+    width: 900px;
+    align-items: center;
+   
 }
 
 .logo{
@@ -37,7 +41,7 @@ body{
 }
 
 .open-menu{
-    display:block;
+    display:none;
     width: 50px;
     height: 50px;
    
@@ -46,7 +50,7 @@ body{
 .open-menu span{
     position: absolute;
     width: 30px;
-    height: 2px;
+    height: 3px;
     background-color: var(--secondary-color);
     margin: 8px;
     top: 6px;  
@@ -55,6 +59,8 @@ body{
 
 .open-menu span:nth-child(2){
     top: 15px;
+    width:20px;
+    margin-left:18px;
 }
 
 
@@ -65,12 +71,12 @@ body{
 
 .open-menu span.open:nth-child(1){
     transform: rotate(45deg);
-    top: 12px;
+    top: 14px;
 }
 
 .open-menu span.open:nth-child(3){
     transform: rotate(-45deg);
-    top: 12px;
+    top: 14px;
 }
 
 .open-menu span.open:nth-child(2){
@@ -84,7 +90,7 @@ body{
 }
 
 .navitems{
-    margin: auto 10px;
+    margin: 0 10px;
 }
 
 .navitems a{
@@ -92,9 +98,19 @@ body{
     color: var(--secondary-color);
 }
 
-.home{
-    background-color: var(--primary-color);
-    min-height: 100vh;
+.dark-btn{
+    font-size: 1.5em;
+    margin:auto 10px;
+    color: var(--secondary-color);
+}
+
+.dark, .light{
+    display: none;
+}
+
+.dark.on, .light.on{
+    display: block;
+   
 }
 
 .layout{
@@ -107,17 +123,17 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    
+ 
 }
 
 .home-image{
    margin-left: 20px;
-    
+   
 }
 
 .home-image img{
-    min-width: 200px;
-    max-width: 300px;
+    max-width: 30vw;
+    min-width:250px ;
 }
 
 .home-text{
@@ -181,8 +197,14 @@ body{
 @media only screen and (max-width:720px){
     .navbar{
         width:100vw ;
-       
+        justify-content: space-between;
     }
+
+    .mobile{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
    
     .navlist{
         position: absolute;
@@ -206,6 +228,17 @@ body{
         line-height: 2rem;
         margin: 20px;
     }
+
+    .open-menu{
+        display:block;
+        
+    }
+
+    .log{
+        float: left;
+    }
+
+    
     
     
     .home-content{
