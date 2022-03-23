@@ -183,11 +183,6 @@ body{
     font-weight: 300;
 }
 
-.about{
-    background-color: #fff;
-    height: 100vh;
-    width: 100%;
-}
 
 @media only screen and (max-width:900px){
     .home-text h1{
