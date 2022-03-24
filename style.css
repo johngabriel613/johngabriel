@@ -128,11 +128,6 @@ body{
  
 }
 
-.home-image{
-   margin-left: 20px;
-   
-}
-
 .home-image img{
     max-width: 30vw;
     min-width:250px ;
@@ -237,12 +232,6 @@ body{
         
     }
 
-    .log{
-        float: left;
-    }
-
-    
-    
     
     .home-content{
         flex-direction: column;
