@@ -15,7 +15,6 @@
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
     background:var(--primary-color);
     transition: background 500ms;
 }
@@ -35,10 +34,11 @@ body{
     font-size: 2rem;
     color: var(--secondary-color);
     margin-left:8px;
+    cursor: pointer;
 }
 
 .logo span{
-    color: #00fff0;
+    color: #00ffff;
 }
 
 .open-menu{
@@ -97,6 +97,7 @@ body{
 .navitems a{
     text-decoration: none;
     color: var(--secondary-color);
+    transition: .3s ease-out;
 }
 
 .dark-btn{
@@ -144,7 +145,7 @@ body{
 }
 
 #typed{
-    color: #00fff0;
+    color: #00ffff;
 }
 
 .home-text h1{
@@ -168,6 +169,7 @@ body{
 .social-icons a{
     margin-right: 10px;
     color: var(--secondary-color);
+    transition: .3s ease-out;
 }
 
 .social-icons, .contact-btn{
@@ -177,10 +179,14 @@ body{
 .contact-btn a{
     text-decoration: none;
     color: #121212;
-    background-color: #00fff0;
+    background-color: #00ffff;
     padding: 10px;
     border-radius: 10px;
     font-weight: 300;
+}
+
+.social-icons a:hover, .navitems a:hover{
+    color: #00ffff;
 }
 
 
