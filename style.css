@@ -38,7 +38,7 @@ body{
 }
 
 .logo span{
-    color: #00ffff;
+    color: #05cbec; ;
 }
 
 .open-menu{
@@ -145,7 +145,7 @@ body{
 }
 
 #typed{
-    color: #00ffff;
+    color: #05cbec; ;
 }
 
 .home-text h1{
@@ -179,14 +179,15 @@ body{
 .contact-btn a{
     text-decoration: none;
     color: #121212;
-    background-color: #00ffff;
+    background-color: #05cbec; ;
     padding: 10px;
     border-radius: 10px;
-    font-weight: 300;
+    font-weight: 400;
+
 }
 
 .social-icons a:hover, .navitems a:hover{
-    color: #00ffff;
+    color: #05cbec; ;
 }
 
 
