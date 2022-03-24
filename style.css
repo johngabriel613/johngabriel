@@ -237,6 +237,10 @@ body{
         flex-direction: column;
     }
 
+    .home-image{
+        justify-self: center;
+    }
+
     .home-text, .home-image{
         margin: 0;
     }
