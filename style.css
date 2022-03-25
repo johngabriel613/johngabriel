@@ -130,7 +130,9 @@ body{
 }
 
 .home-image img{
-    width: 250px;
+    width: 100%;
+    max-width: 400px;
+    min-width: 300px;
 }
 
 .home-text{
@@ -239,6 +241,11 @@ body{
 
     .home-text, .home-image{
         margin: 0;
+    }
+
+    .home-image img{
+        max-width: 300px;
+        min-width: 200px;
     }
 
 }
