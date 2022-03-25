@@ -4,8 +4,9 @@
     box-sizing: border-box;
 }
 
+
 :root{
-    --primary-color:#fff;
+    --primary-color:#ede9e8;
     --secondary-color:#121212;
 }
 
@@ -15,7 +16,7 @@
 }
 
 body{
-    background:var(--primary-color);
+    background:	var(--primary-color);
     transition: background 500ms;
 }
 
@@ -129,7 +130,7 @@ body{
 }
 
 .home-image img{
-    width: 200px;
+    width: 250px;
 }
 
 .home-text{
