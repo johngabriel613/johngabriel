@@ -266,6 +266,10 @@ body{
         margin-top: 0;
     }
 
+    .sticky{
+        border-radius: none;
+    }
+
     .mobile{
         display: flex;
         flex-direction: row-reverse;
