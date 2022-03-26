@@ -8,11 +8,13 @@
 :root{
     --primary-color:#ede9e8;
     --secondary-color:#121212;
+    --tertiary-color:#585757;
 }
 
 .dark-theme{
     --primary-color:#121212;
     --secondary-color:#fff;
+    --tertiary-color:#707070;
 }
 
 body{
@@ -28,7 +30,6 @@ body{
     left: 50%;
     width: 900px;
     align-items: center;
-   
 }
 
 .logo{
@@ -46,7 +47,6 @@ body{
     display:none;
     width: 50px;
     height: 50px;
-   
 }
 
 .open-menu span{
@@ -65,8 +65,6 @@ body{
     margin-left:18px;
 }
 
-
-
 .open-menu span:last-child{
     top: 24px;
 }
@@ -76,13 +74,13 @@ body{
     top: 14px;
 }
 
-.open-menu span.open:nth-child(3){
-    transform: rotate(-45deg);
-    top: 14px;
-}
-
 .open-menu span.open:nth-child(2){
     display: none;
+}
+
+.open-menu span.open:last-child{
+    transform: rotate(-45deg);
+    top: 14px;
 }
 
 .navlist{
@@ -141,18 +139,18 @@ body{
     
 }
 
-#typed{
-    color: #05cbec; 
-}
-
 .home-text h1{
     font-size: 2rem;
     color: var(--secondary-color);
     text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
 }
 
+#typed{
+    color: #05cbec; 
+}
+
 .home-text p{
-    color: #585757;
+    color: var(--tertiary-color);
     text-align: justify;
 }
 
@@ -162,16 +160,17 @@ body{
 
 .social-icons{
     font-size: 1.5rem;
+    margin: 20px 2px;
 }
 
 .social-icons a{
     margin-right: 10px;
-    color: #585757;
+    color: var(--tertiary-color);
     transition: .3s ease-out;
 }
 
-.social-icons{
-    margin: 20px 2px;
+.contact-btn{
+    margin-top: 30px;
 }
 
 .contact-btn a{
@@ -186,10 +185,6 @@ body{
     transition: .3s ease-out;
 }
 
-.contact-btn{
-    margin-top: 30px;
-}
-
 .social-icons a:hover, .navitems a:hover{
     color: #05cbec; 
 }
@@ -199,8 +194,6 @@ body{
     color: var(--secondary-color);
     box-shadow: none;
 }
-
-
 
 @media only screen and (max-width:900px){
     .home-text h1{
@@ -219,9 +212,6 @@ body{
         flex-direction: row-reverse;
     }
 
-    
-
-   
     .navlist{
         position: absolute;
         display: block;
@@ -252,8 +242,7 @@ body{
         display:block;
         
     }
-
-       
+  
     .home-content{
         flex-direction: column;
     }
