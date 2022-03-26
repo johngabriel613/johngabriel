@@ -3,6 +3,7 @@ const OpenMenu = document.querySelector('.open-menu')
 const menuBar = document.querySelectorAll('.open-menu span')
 const Nav = document.querySelector('.navlist')
 
+
 console.log(menuBar)
 
 OpenMenu.addEventListener('click', () => {
@@ -22,3 +23,12 @@ darkbtn.addEventListener('click', () => [
     sunbtn.classList.toggle('on')
 
 ])
+
+const NavBar = document.querySelector('.navbar')
+window.addEventListener('scroll', () => {
+    if(scrollY > 20){
+        NavBar.classList.add('sticky')
+    } else {
+        NavBar.classList.remove('sticky')
+    }
+})

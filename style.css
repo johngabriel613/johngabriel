@@ -5,6 +5,10 @@
 }
 
 
+html{
+    scroll-behavior: smooth;
+}
+
 :root{
     --primary-color:#ede9e8;
     --secondary-color:#121212;
@@ -24,12 +28,26 @@ body{
 
 .navbar{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     position: fixed;
     transform: translateX(-50%);
     left: 50%;
     width: 900px;
+    max-width: 700px;
     align-items: center;
+    
+    transition: .3s ease-in-out;
+    z-index: 999;
+}
+
+.sticky{
+    background: #282828;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.sticky .logo, .sticky .navlist a, .sticky .dark-btn{
+    color: #ede9e8;
 }
 
 .logo{
@@ -81,6 +99,10 @@ body{
 .open-menu span.open:last-child{
     transform: rotate(-45deg);
     top: 14px;
+}
+
+.sticky .open-menu span{
+    background-color: #ede9e8;
 }
 
 .navlist{
@@ -195,6 +217,42 @@ body{
     box-shadow: none;
 }
 
+.about{
+    min-height: 100vh;
+}
+
+.title-section{
+    display: flex;
+    justify-content: center;
+    padding: 80px 0;
+    position: relative;
+}
+
+.title-section::before{
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    bottom:75px;
+}
+
+.title-section::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 5px solid var(--primary-color);
+    background-color: #05cbec;
+    bottom: 67px;
+    transition: border 500ms;
+}
+
+.title-section h1{
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+}
+
 @media only screen and (max-width:900px){
     .home-text h1{
         font-size: 1.5rem;
@@ -205,6 +263,7 @@ body{
     .navbar{
         width:100vw ;
         justify-content: space-between;
+        margin-top: 0;
     }
 
     .mobile{
