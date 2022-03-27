@@ -51,10 +51,6 @@ body{
     
 }
 
-.sticky .navlist{
-    background: #282828;
-    transition: background 500ms;
-}
 
 .logo{
     font-size: 2rem;
@@ -299,6 +295,10 @@ body{
 
     .navlist.open{
         display: block;
+    }
+
+    .sticky .navlist a{
+        color: #121212;
     }
 
     .navitems{
