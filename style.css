@@ -35,19 +35,25 @@ body{
     width: 900px;
     max-width: 700px;
     align-items: center;
-    
-    transition: .3s ease-in-out;
     z-index: 999;
+    transition: .3s ease;
 }
 
 .sticky{
     background: #282828;
     border-radius: 10px;
     margin-top: 10px;
+    transition: background 500ms;
 }
 
-.sticky .logo, .sticky .navlist a, .sticky .dark-btn{
+.sticky .logo,.sticky .navlist a,.sticky .dark-btn{
     color: #ede9e8;
+    
+}
+
+.sticky .navlist{
+    background: #282828;
+    transition: background 500ms;
 }
 
 .logo{
@@ -260,14 +266,19 @@ body{
 }
 
 @media only screen and (max-width:720px){
+    .nav-layout{
+        height: 100vh;
+    }
+    
     .navbar{
         width:100vw ;
         justify-content: space-between;
         margin-top: 0;
+        
     }
 
     .sticky{
-        border-radius: none;
+        border-radius: 0;
     }
 
     .mobile{
@@ -277,30 +288,23 @@ body{
 
     .navlist{
         position: absolute;
-        display: block;
-        max-width: 400px;
-        max-height: 400px;
-        height: 100vh;
-        background-color: #808080;
-        border-radius: 20px;
-        transition: .5s ease;
-        text-align: center;
+        background: var(--primary-color);
+        flex-direction: column;
+        align-self: flex-start ;
         width: 100%;
-        transform: translate(-50%, -50%);
-        left: 50%;
-        top:3000%;
+        top: 50px;
+        transition: background 500ms;
+        display: none;
     }
 
     .navlist.open{
-        top:1300%;
-     
+        display: block;
     }
 
     .navitems{
-        line-height: 2rem;
-        margin: 20px;
+        margin: 10px;
+        
     }
-
     .open-menu{
         display:block;
         
