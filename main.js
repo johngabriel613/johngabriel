@@ -32,3 +32,30 @@ window.addEventListener('scroll', () => {
         NavBar.classList.remove('sticky')
     }
 })
+
+const NavItem = document.querySelectorAll('.navlist a')
+
+NavItem[0].addEventListener('click', () => {
+    Nav.classList.remove('open')
+    menuBar[0].classList.remove('open')
+    menuBar[1].classList.remove('open')
+    menuBar[2].classList.remove('open')
+})
+NavItem[1].addEventListener('click', () => {
+    Nav.classList.remove('open')
+    menuBar[0].classList.remove('open')
+    menuBar[1].classList.remove('open')
+    menuBar[2].classList.remove('open')
+})
+NavItem[2].addEventListener('click', () => {
+    Nav.classList.remove('open')
+    menuBar[0].classList.remove('open')
+    menuBar[1].classList.remove('open')
+    menuBar[2].classList.remove('open')
+})
+NavItem[3].addEventListener('click', () => {
+    Nav.classList.remove('open')
+    menuBar[0].classList.remove('open')
+    menuBar[1].classList.remove('open')
+    menuBar[2].classList.remove('open')
+})
