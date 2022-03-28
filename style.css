@@ -296,9 +296,14 @@ body{
     .navlist.open{
         display: block;
     }
+    
+    .navitems{
+        border-bottom: .1px solid #707070;
+        padding:.5rem;
+    }
 
     .sticky .navlist a{
-        color: #121212;
+        color: var(--secondary-color);
     }
 
     .navitems{
