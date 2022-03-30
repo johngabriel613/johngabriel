@@ -16,7 +16,7 @@ html{
 }
 
 .dark-theme{
-    --primary-color:#121212;
+    --primary-color:#141d26;
     --secondary-color:#fff;
     --tertiary-color:#707070;
 }
@@ -43,6 +43,7 @@ body{
     background: #282828;
     border-radius: 10px;
     margin-top: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     transition: background 500ms;
 }
 
@@ -221,6 +222,8 @@ body{
 
 .about{
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
 }
 
 .title-section{
@@ -253,6 +256,39 @@ body{
 .title-section h1{
     font-size: 1.8rem;
     color: var(--secondary-color);
+}
+
+.about-content{
+    width: 100%;
+    max-width: 750px;
+    padding: 20px;
+    align-items: center;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 6.4px 14.4px 0 rgb(0 0 0 / 13%), 0 1.2px 3.6px 0 rgb(0 0 0 / 11%);
+}
+
+.about-profile{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.profile-name p{
+    color: #585757;
+}
+
+.about-content img{
+    
+}
+
+.about-content h1{
+    font-size: 1rem;
+}
+
+.about-content p{
+   font-size: .9rem;
+    
 }
 
 @media only screen and (max-width:900px){
