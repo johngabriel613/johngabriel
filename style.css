@@ -306,9 +306,13 @@ body{
     align-items: center;
 }
 
-.cv svg{
+.qoute{
     color: rgba(0, 0, 0, 0.1);
     font-size: 8em;
+}
+
+.dl-cv{
+   
 }
 
 .download a{
