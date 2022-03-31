@@ -284,7 +284,8 @@ body{
     font-size: 8em;
     position: absolute;
     right: 0;
-    color: rgba(0, 0, 0, 0.3);;
+    color: rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
 }
 
 .about-content img{
@@ -301,11 +302,16 @@ body{
 
 .cv{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.cv a{
-    font-size: .8rem;
+.cv svg{
+    color: rgba(0, 0, 0, 0.1);
+    font-size: 8em;
+}
+
+.download a{
     margin-top: 10px;
     text-decoration: none;
     background: #05cbec;
@@ -313,6 +319,7 @@ body{
     border-radius: 10px;
     padding: 10px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    
 }
 
 @media only screen and (max-width:900px){
