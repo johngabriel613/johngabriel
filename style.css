@@ -239,7 +239,7 @@ body{
     width: 80px;
     height: 3px;
     background-color: var(--secondary-color);
-    top: 45px;
+    top: 55px;
 }
 
 .title-section::after{
@@ -249,12 +249,12 @@ body{
     height: 10px;
     border: 5px solid var(--primary-color);
     background-color: #05cbec;
-    top:37px;
+    top:47px;
     transition: border 500ms;
 }
 
 .title-section h1{
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     color: var(--secondary-color);
 }
 
@@ -295,7 +295,6 @@ body{
 .about-content p{
    font-size: .9rem;
    margin: 0 30px;
-   text-align: justify;
 }
 
 .cv{
@@ -325,6 +324,7 @@ body{
 .tech-stack h1{
     text-align: center;
     margin: 60px 0 20px;
+    border-bottom: 1px;
 }
 
 .tech-stack-items{
