@@ -299,8 +299,8 @@ body{
 
 .cv{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .qoute{
@@ -310,6 +310,8 @@ body{
 
 
 .download a{
+    position: absolute;
+    right: 0;
     text-decoration: none;
     background: #05cbec;
     color: #121212;
@@ -317,7 +319,7 @@ body{
     padding: 10px;
     margin: 0 30px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    
+
 }
 
 .tech-stack h1{
