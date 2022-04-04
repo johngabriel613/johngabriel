@@ -229,7 +229,7 @@ body{
 .title-section{
     display: flex;
     justify-content: center;
-    padding: 80px 0;
+    margin: 60px 0 30px;
     position: relative;
 }
 
@@ -239,7 +239,7 @@ body{
     width: 80px;
     height: 3px;
     background-color: var(--secondary-color);
-    bottom:75px;
+    top: 45px;
 }
 
 .title-section::after{
@@ -249,7 +249,7 @@ body{
     height: 10px;
     border: 5px solid var(--primary-color);
     background-color: #05cbec;
-    bottom: 67px;
+    top:37px;
     transition: border 500ms;
 }
 
@@ -272,11 +272,10 @@ body{
 .about-profile{
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
-    
+    margin: 0 20px 20px;
 }
 
-.profile-name p{
+.profile-name span{
     color: #585757;
 }
 
@@ -288,9 +287,6 @@ body{
     margin-right: 10px;
 }
 
-.about-content img{
-    
-}
 
 .about-content h1{
     font-size: 1rem;
@@ -298,6 +294,8 @@ body{
 
 .about-content p{
    font-size: .9rem;
+   margin: 0 30px;
+   text-align: justify;
 }
 
 .cv{
@@ -311,9 +309,6 @@ body{
     font-size: 8em;
 }
 
-.dl-cv{
-   
-}
 
 .download a{
     margin-top: 10px;
@@ -322,8 +317,31 @@ body{
     color: #121212;
     border-radius: 10px;
     padding: 10px;
+    margin: 0 30px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     
+}
+
+.tech-stack h1{
+    text-align: center;
+    margin: 60px 0 20px;
+}
+
+.tech-stack-items{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    justify-self: center;
+    align-items: center;
+}
+
+.tech-stack-items svg{
+    font-size: 8em;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 6.4px 14.4px 0 rgb(0 0 0 / 13%), 0 1.2px 3.6px 0 rgb(0 0 0 / 11%);
+    margin: 10px;
 }
 
 @media only screen and (max-width:900px){
@@ -397,6 +415,11 @@ body{
     .home-image img{
         max-width: 300px;
         min-width: 200px;
+    }
+
+    .tech-stack-items{
+        flex-direction: column;
+        
     }
 
 }
