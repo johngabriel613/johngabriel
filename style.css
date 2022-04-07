@@ -292,6 +292,10 @@ body{
     z-index: 56;
 }
 
+.qoute{
+    color: var(--primary-color);
+    font-size: 8em;
+}
 
 .about-content h1{
     font-size: 1rem;
@@ -313,10 +317,7 @@ body{
     position: relative;
 }
 
-.qoute{
-    color: var(--primary-color);
-    font-size: 8em;
-}
+
 
 
 .download a{
