@@ -279,20 +279,26 @@ body{
 
 .profile-name span{
     color: var(--tertiary-color);
+    position: absolute;
+    font-size: .9rem;
+    z-index: 58;
 }
 
 .about-profile svg{
     font-size: 8em;
     position: absolute;
     right: 0;
-    color: rgba(0, 0, 0, 0.1);
     margin-right: 10px;
+    z-index: 56;
 }
 
 
 .about-content h1{
     font-size: 1rem;
     color: var(--secondary-color);
+    position: absolute;
+    top: 50px;
+    z-index: 57;
 }
 
 .about-content p{
@@ -308,7 +314,7 @@ body{
 }
 
 .qoute{
-    color: rgba(0, 0, 0, 0.1);
+    color: var(--primary-color);
     font-size: 8em;
 }
 
