@@ -359,6 +359,35 @@ body{
     margin: 10px;
 }
 
+.education{
+   
+}
+
+.educ-item{
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.educ-card{
+    padding: 10px;
+    background-color: var(--card);
+    border-radius: 5px;
+    width: 100%;
+    max-width: 700px;
+    margin: 10px;
+    box-shadow: 0 6.4px 14.4px 0 rgb(0 0 0 / 13%), 0 1.2px 3.6px 0 rgb(0 0 0 / 11%);
+}
+
+.educ-card > :is(h2, h3){
+    color: var(--secondary-color);
+}
+
+.educ-card p{
+    color: var(--tertiary-color);
+}
+
 @media only screen and (max-width:900px){
     .home-text h1{
         font-size: 1.5rem;
