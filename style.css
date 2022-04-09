@@ -377,9 +377,33 @@ body{
     border-radius: 5px;
     width: 100%;
     max-width: 700px;
-    margin: 10px;
+    margin: 10px 0 50px;
     box-shadow: 0 6.4px 14.4px 0 rgb(0 0 0 / 13%), 0 1.2px 3.6px 0 rgb(0 0 0 / 11%);
     position: relative;
+}
+
+.educ-card:not(:last-child)::before{
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #05cbec;
+    transform: translate(-50%);
+    left: 50%;
+    top: 95%;
+    z-index: 100;
+}
+
+.educ-card:nth-child(1)::after{
+    position: absolute;
+    content: '';
+    width: 5px;
+    height:525px;
+    background-color: #585757;
+    transform: translate(-50%);
+    left: 50%;
+    top:100%;
 }
 
 
