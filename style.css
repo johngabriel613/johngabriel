@@ -338,6 +338,7 @@ body{
 
 .tech-stack{
     margin-bottom: 20px;
+    
 }
 
 .tech-stack h1{
@@ -362,7 +363,7 @@ body{
 }
 
 .education{
-   
+   min-height: 100vh;
 }
 
 .educ-item{
@@ -461,6 +462,10 @@ body{
 .educ-card span{
     color: var(--quaternary-color);
     font-size: .9rem;
+}
+
+.projects{
+    min-height: 100vh;
 }
 
 @media only screen and (max-width:900px){
