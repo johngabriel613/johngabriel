@@ -157,10 +157,7 @@ body{
 }
 
 .home-image img{
-    width: 100%;
-    max-width: 300px;
-    min-width: 300px;
-    height: 100%;
+    
 }
 
 .home-text{
@@ -538,8 +535,7 @@ body{
     }
 
     .home-image img{
-        max-width: 300px;
-        min-width: 200px;
+        
     }
 
     .tech-stack-items svg{
