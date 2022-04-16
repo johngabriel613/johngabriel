@@ -122,6 +122,7 @@ body{
 
 .navitems a{
     text-decoration: none;
+    letter-spacing: .07rem;
     color: var(--secondary-color);
     transition: .3s ease-out;
 }
@@ -392,29 +393,6 @@ body{
     animation: pulse 1s ease-in-out infinite;
 }
 
-/*.dot{
-    width: 20px;
-    height: 20px;
-    background-color: #05cbec;
-    border-radius: 50%;
-    display: block;
-    margin: auto;
-    position: relative;
-    top: 20px;
-    
-}
-
-.dot span{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    border: 3px solid #05cbec;
-    left:-2px ;
-    top: -2px;
-    position: absolute;
-    animation:pulse  1s ease infinite;
-}*/
-
 .line{
     width: 3.5px;
     height: 525px;
@@ -443,8 +421,57 @@ body{
     font-size: .9rem;
 }
 
-.projects{
+.contact{
+    padding-top: 10px;
     min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 700px;
+    padding:10px;
+    flex-wrap: wrap;
+}
+
+form input, textarea{
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: var(--card);
+    outline: none;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+}
+
+.name{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.name input{
+    width: 49.7%;
+    
+}
+
+::placeholder{
+    color: var(--tertiary-color);
+}
+
+form button{
+    padding: 10px;
+    background-color: #05cbec;
+    outline: none;
+    border: none;
+    border-radius: 5px;
 }
 
 @media only screen and (max-width:900px){
@@ -525,5 +552,13 @@ body{
         
     }
 
+    .name{
+        flex-wrap: wrap;
+    }
+
+    .name input{
+        width: 100%;
+        
+    }
 }
 
