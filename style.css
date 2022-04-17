@@ -232,6 +232,7 @@ body{
     min-height: 100vh;
     display: flex;
     justify-content: center;
+    padding: 10px;
 }
 
 .title-section{
@@ -426,6 +427,7 @@ body{
     padding-top: 10px;
 }
 
+
 .services-content{
     display: flex;
     justify-content: center;
@@ -448,7 +450,7 @@ body{
 
 .services-card svg{
     font-size: 2.7rem;
-    color: var(--secondary-color);
+    color: #05cbec;
 }
 
 .services-card h2{
@@ -665,3 +667,22 @@ footer svg{
     
 }
 
+@media only screen and (max-width:674px) {
+    .contact-info{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width:499px) {
+    .services-card{
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .contact-info-card{
+        width: 100%;
+        max-width: 400px;
+    }
+}
