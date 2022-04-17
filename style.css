@@ -448,7 +448,7 @@ body{
 
 .services-card svg{
     font-size: 2.7rem;
-    color: #05cbec;
+    color: var(--secondary-color);
 }
 
 .services-card h2{
@@ -467,6 +467,7 @@ body{
 
 .contact{
     padding-top: 10px;
+    min-height: 100vh;
 }
 
 .contact-content{
@@ -511,7 +512,7 @@ form{
     flex-direction: column;
     width: 100%;
     max-width: 400px;
-    padding:20px;
+    padding: 30px;
     flex-wrap: wrap;
     background-color: var(--card);
     border-radius: 6px;
@@ -519,9 +520,14 @@ form{
    
 }
 
+form h2{
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+}
+
 form input, textarea{
     margin-bottom: 15px;
-    padding: 15px;
+    padding: 10px;
     background-color: #d3d3d3;
     outline: none;
     border: none;
@@ -544,7 +550,7 @@ textarea{
 }
 
 ::placeholder{
-    color: #3a3b3c;
+    color: #1c1c1c;
 }
 
 form button{
@@ -553,6 +559,28 @@ form button{
     outline: none;
     border: none;
     border-radius: 5px;
+}
+
+footer{
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    color:var(--primary-color);
+}
+
+footer a{
+    text-decoration: none;
+    color:var(--primary-color);
+}
+
+footer svg{
+    margin-left: 5px;
 }
 
 @media only screen and (max-width:900px){
