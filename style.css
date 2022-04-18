@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 html{
     scroll-behavior: smooth;
 }
@@ -61,7 +60,6 @@ body{
     color: #ede9e8;
     
 }
-
 
 .logo{
     font-size: 2rem;
@@ -148,8 +146,6 @@ body{
     cursor: pointer;
 }
 
-
-
 .layout{
     margin:0 10px;
 }
@@ -230,8 +226,6 @@ body{
     color: var(--secondary-color);
     box-shadow: none;
 }
-
-
 
 .about{
     min-height: 100vh;
@@ -624,8 +618,6 @@ footer svg{
     margin-left: 5px;
 }
 
-
-
 .scroll-up{
     width: 100%;
     position: fixed;
@@ -643,11 +635,11 @@ footer svg{
 }
 
 .active{
-    opacity: .9;
+    opacity: 1;
     
 }
 
-.scroll-up svg{
+.scroll-up a{
     font-size: 2rem;
     background-color: #05cbec;
     width: 40px;
@@ -655,6 +647,14 @@ footer svg{
     border-radius: 5px;
     color: #121212;
     margin-right:10px;
+    position: relative;
+    box-shadow: 0 6.4px 14.4px 0 rgb(0 0 0 / 13%), 0 1.2px 3.6px 0 rgb(0 0 0 / 11%);
+}
+
+.scroll-up svg{
+    position: absolute;
+    left: 4px;
+    top: 5px;
 }
 
 @media only screen and (max-width:900px){
