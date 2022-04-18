@@ -16,6 +16,7 @@ html{
     --quaternary-color:#707070;
     --card:#fff;
     --educ-span: #585757;
+    --bg:url(images/light.svg);
 }
 
 .dark-theme{
@@ -25,11 +26,14 @@ html{
     --quaternary-color:#585757;
     --card:#1c1c1c;
     --educ-span: #d3d3d3;
+    --bg:url(images/dark.svg);
 }
 
 body{
-    background:	var(--primary-color);
-    transition: background 500ms;
+    background-image:	var(--bg);
+    background-attachment: fixed;
+    background-size: cover;
+    transition: background-image 500ms;
 }
 
 .navbar{
@@ -182,7 +186,7 @@ body{
 }
 
 .home-text p{
-    color: var(--tertiary-color);
+    color: var(--secondary-color);
     text-align: justify;
 }
 
@@ -197,7 +201,7 @@ body{
 
 .social-icons a{
     margin-right: 10px;
-    color: var(--tertiary-color);
+    color: var(--educ-span);
     transition: .3s ease-out;
 }
 
@@ -441,7 +445,13 @@ body{
 }
 
 .services{
-    padding-top: 10px;
+   
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
 
 
