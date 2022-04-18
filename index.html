@@ -290,15 +290,17 @@
             </div>
         </div>
 
-        <form action="">
+        <form action="https://formsubmit.co/admin@johngabrielpaderog.me" method="POST">
 
             <h2>I'd like to hear anything from you.</h2>
             <div class="name">
-                <input type="text" placeholder="First Name" required>
-                <input type="text" placeholder="Surname" required>
+                <input type="text" name="First Name" placeholder="First Name" required>
+                <input type="text" name="Surname" placeholder="Surname" required>
             </div>
-            <input type="email" placeholder="Please type your email" required>
-            <textarea name="message" id="messagebox" cols="30" rows="10" placeholder="Type your message here..." required></textarea>
+            <input type="email" name="Email" placeholder="Please type your email" required>
+            <textarea name="message" name="Message" id="messagebox" cols="30" rows="10" placeholder="Type your message here..." required></textarea>
+            <input type="hidden" name="_cc" value="paderogjohn28@gmail.com">
+            <input type="hidden" name="_captcha" value="false">
             <button type="submit" placeholder>Submit <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><path fill="currentColor" d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26l.001.002l4.995 3.178l3.178 4.995l.002.002l.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215l7.494-7.494l1.178-.471l-.47 1.178Z"/></svg></button>
         </form>
     </div>
