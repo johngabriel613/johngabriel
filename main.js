@@ -24,6 +24,7 @@ darkbtn.addEventListener('click', () => [
 
 ])
 
+
 const NavBar = document.querySelector('.navbar')
 window.addEventListener('scroll', () => {
     if(scrollY > 20){
@@ -59,3 +60,14 @@ NavItem[3].addEventListener('click', () => {
     menuBar[1].classList.remove('open')
     menuBar[2].classList.remove('open')
 })
+
+
+const Scroll = document.querySelector('.scroll-up')
+window.addEventListener('scroll', () => {
+    if(scrollY > 20){
+        Scroll.classList.add('active')
+    } else {
+        Scroll.classList.remove('active')
+    }
+})
+
